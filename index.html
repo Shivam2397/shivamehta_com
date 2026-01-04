@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shivam Mehta - Full Stack Developer & Software Engineer. Building modern web applications and digital experiences.">
+    <title>Shivam Mehta | Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Shivam</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="hero-greeting">Hi, I'm</span>
+                        <span class="hero-name">Shivam Mehta</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        I design and build products that
+                        <span class="highlight">deliver real impact.</span>
+                    </p>
+                    <p class="hero-value-prop">
+                        🚀 <strong>60+ Projects</strong> • <strong>97% Client Satisfaction</strong> • <strong>Average 35% Revenue Increase</strong>
+                    </p>
+                    <div class="hero-location">
+                        <span class="location-text">BASED IN</span>
+                        <span class="location-value">United States</span>
+                    </div>
+                    <div class="hero-role">
+                        <span class="role-text">Full Stack Developer</span>
+                        <span class="role-separator">•</span>
+                        <span class="role-text">Software Engineer</span>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#work" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image-container has-image">
+                        <img src="assets/dp.jpg" alt="Shivam Mehta" id="profile-image" class="profile-image">
+                        <div class="profile-image-placeholder" id="profile-placeholder" style="display: none;">
+                            <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="100" cy="100" r="100" fill="#1a1a1a"/>
+                                <circle cx="100" cy="80" r="30" fill="#333"/>
+                                <path d="M50 160 Q50 140 100 140 T150 160" stroke="#333" stroke-width="20" fill="none"/>
+                            </svg>
+                            <p>Upload your profile picture</p>
+                            <input type="file" id="profile-upload" accept="image/*" style="display: none;">
+                            <button class="upload-btn" onclick="document.getElementById('profile-upload').click()">Choose Image</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About</span>
+                <h2 class="section-title">Building the bridge between ideas and experiences</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm <strong>Shivam Mehta</strong>, an engineering-driven developer who turns complex technical challenges into high-speed web products. I manage the entire stack with a focus on clean, reusable code and seamless performance.
+                    </p>
+                    <p class="about-description">
+                        I excel in modern web technologies and full-stack architecture, always delivering solutions that actually solve problems for every user. My code is built to last, helping businesses reach the next level.
+                    </p>
+                    <p class="about-description">
+                        With <strong>5+ years of experience</strong> and <strong>60+ successful projects</strong> delivered, I've helped clients increase revenue by an average of <strong>35%</strong> and reduce operational costs by <strong>40%</strong>. I'm committed to delivering not just code, but real business value that drives growth and success.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">60+</div>
+                            <div class="stat-label">Projects Delivered</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years Experience</div>  
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">97%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Work With Me Section -->
+    <section id="why-me" class="why-me">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why Work With Me</span>
+                <h2 class="section-title">What Makes Me Different</h2>
+                <p class="section-subtitle">Here's why clients choose to work with me on Upwork</p>
+            </div>
+            <div class="why-me-grid">
+                <div class="why-me-card">
+                    <div class="why-me-icon">⚡</div>
+                    <h3 class="why-me-title">Fast Delivery</h3>
+                    <p class="why-me-description">I deliver projects on time, every time. Average project completion is 30% faster than industry standards without compromising quality.</p>
+                </div>
+                <div class="why-me-card">
+                    <div class="why-me-icon">💬</div>
+                    <h3 class="why-me-title">Clear Communication</h3>
+                    <p class="why-me-description">Regular updates, transparent progress reports, and responsive communication. You'll always know what's happening with your project.</p>
+                </div>
+                <div class="why-me-card">
+                    <div class="why-me-icon">🎯</div>
+                    <h3 class="why-me-title">Results-Driven</h3>
+                    <p class="why-me-description">I focus on delivering measurable business outcomes. Every project is designed to increase revenue, reduce costs, or improve efficiency.</p>
+                </div>
+                <div class="why-me-card">
+                    <div class="why-me-icon">🛡️</div>
+                    <h3 class="why-me-title">Reliable & Trusted</h3>
+                    <p class="why-me-description">97% client satisfaction rate with 100% on-time delivery. I stand behind my work with full support and maintenance.</p>
+                </div>
+                <div class="why-me-card">
+                    <div class="why-me-icon">🔧</div>
+                    <h3 class="why-me-title">Full-Stack Expertise</h3>
+                    <p class="why-me-description">From frontend to backend, database to deployment - I handle the entire development lifecycle, saving you time and money.</p>
+                </div>
+                <div class="why-me-card">
+                    <div class="why-me-icon">📈</div>
+                    <h3 class="why-me-title">Proven Track Record</h3>
+                    <p class="why-me-description">60+ successful projects with clients seeing average revenue increases of 35% and cost reductions of 40%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A collection of projects that showcase my skills and expertise</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">Project Image</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">E-Commerce Platform</div>
+                        <h3 class="project-title">Modern E-Commerce Solution</h3>
+                        <p class="project-description">
+                            A full-stack e-commerce platform with real-time inventory management, secure payment processing, and advanced analytics. Built with microservices architecture for scalability.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                        <button class="btn btn-primary btn-details" data-project="1">More Details</button>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">Project Image</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">SaaS Application</div>
+                        <h3 class="project-title">Cloud-Based Project Management</h3>
+                        <p class="project-description">
+                            A comprehensive project management SaaS with team collaboration, time tracking, and automated reporting. Features real-time updates and seamless integrations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                        <button class="btn btn-primary btn-details" data-project="2">More Details</button>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">Project Image</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Mobile App</div>
+                        <h3 class="project-title">Cross-Platform Mobile Application</h3>
+                        <p class="project-description">
+                            A feature-rich mobile application with offline capabilities, push notifications, and social integration. Optimized for both iOS and Android platforms.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">Expo</span>
+                        </div>
+                        <button class="btn btn-primary btn-details" data-project="3">More Details</button>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">Project Image</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">API & Backend</div>
+                        <h3 class="project-title">RESTful API Platform</h3>
+                        <p class="project-description">
+                            A scalable RESTful API with comprehensive documentation, rate limiting, and authentication. Built with best practices for security and performance.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Swagger</span>
+                        </div>
+                        <button class="btn btn-primary btn-details" data-project="4">More Details</button>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">Project Image</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Data Analytics</div>
+                        <h3 class="project-title">Real-Time Analytics Dashboard</h3>
+                        <p class="project-description">
+                            An interactive dashboard with real-time data visualization, custom reports, and predictive analytics. Handles millions of data points with sub-second response times.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Elasticsearch</span>
+                        </div>
+                        <button class="btn btn-primary btn-details" data-project="5">More Details</button>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">Project Image</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">AI/ML Integration</div>
+                        <h3 class="project-title">AI-Powered Content Platform</h3>
+                        <p class="project-description">
+                            A content management platform with AI-powered recommendations, automated content generation, and intelligent search capabilities.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">OpenAI</span>
+                            <span class="tech-tag">FastAPI</span>
+                        </div>
+                        <button class="btn btn-primary btn-details" data-project="6">More Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Skills</span>
+                <h2 class="section-title">My Skillset</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3 class="skills-category-title">Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">⚛️</div>
+                            <span class="skill-name">React</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">▲</div>
+                            <span class="skill-name">Next.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📘</div>
+                            <span class="skill-name">TypeScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🎨</div>
+                            <span class="skill-name">Tailwind CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">⚡</div>
+                            <span class="skill-name">Vue.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📱</div>
+                            <span class="skill-name">React Native</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 class="skills-category-title">Backend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">🟢</div>
+                            <span class="skill-name">Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🚂</div>
+                            <span class="skill-name">Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🐍</div>
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">⚡</div>
+                            <span class="skill-name">FastAPI</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">☕</div>
+                            <span class="skill-name">Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🔷</div>
+                            <span class="skill-name">GraphQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 class="skills-category-title">Database</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">🍃</div>
+                            <span class="skill-name">MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🐘</div>
+                            <span class="skill-name">PostgreSQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🔥</div>
+                            <span class="skill-name">Firebase</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">⚡</div>
+                            <span class="skill-name">Redis</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🗄️</div>
+                            <span class="skill-name">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 class="skills-category-title">DevOps & Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">☁️</div>
+                            <span class="skill-name">AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🐳</div>
+                            <span class="skill-name">Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">⚙️</div>
+                            <span class="skill-name">Kubernetes</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🔧</div>
+                            <span class="skill-name">CI/CD</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📦</div>
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🚀</div>
+                            <span class="skill-name">Vercel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Let's create something real</h2>
+                <p class="section-subtitle">Building digital experiences that matter, one line of code at a time.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-main">
+                    <div class="upwork-cta">
+                        <div class="upwork-icon">💼</div>
+                        <h3 class="upwork-title">Available for Projects on Upwork</h3>
+                        <p class="upwork-description">
+                            I'm actively taking on new projects through Upwork. Whether you need a full-stack application, 
+                            API development, or a complete website redesign, let's discuss your project requirements.
+                        </p>
+                        <div class="trust-badges">
+                            <div class="trust-badge">
+                                <span class="badge-icon">✅</span>
+                                <span class="badge-text">97% Job Success</span>
+                            </div>
+                            <div class="trust-badge">
+                                <span class="badge-icon">⏱️</span>
+                                <span class="badge-text">Response in 2 hours</span>
+                            </div>
+                            <div class="trust-badge">
+                                <span class="badge-icon">💯</span>
+                                <span class="badge-text">100% On-Time Delivery</span>
+                            </div>
+                        </div>
+                        <a href="https://upwork.com/freelancers/~010089b114d6844b05?mp_source=share" target="_blank" class="btn btn-primary btn-upwork">
+                            <span>Hire Me on Upwork</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <p class="upwork-note">
+                            For all project inquiries, please contact me through Upwork for a streamlined experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <h3>Upwork</h3>
+                            <a href="https://upwork.com/freelancers/~010089b114d6844b05?mp_source=share" target="_blank" class="contact-link">View My Upwork Profile</a>
+                            <p class="contact-text">Primary platform for project inquiries</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🌐</div>
+                        <div class="contact-details">
+                            <h3>Available for</h3>
+                            <p class="contact-text">Freelance projects • Full-stack development • Consulting</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div class="contact-details">
+                            <h3>Response Time</h3>
+                            <p class="contact-text">Typically responds within 2 hours during business hours</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🌍</div>
+                        <div class="contact-details">
+                            <h3>Availability</h3>
+                            <p class="contact-text">Available for projects • Flexible timezone coordination</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>© 2024 Shivam Mehta. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#work">Work</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal-container">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-content" id="modal-content">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Details Data (hidden) -->
+    <div id="project-details" style="display: none;">
+        <!-- Project 1 -->
+        <div data-project="1">
+            <h2 class="modal-title">Modern E-Commerce Solution</h2>
+            <div class="modal-section">
+                <h3 class="modal-section-title">Client Challenge</h3>
+                <p>The client was struggling with an outdated e-commerce platform that couldn't handle their growing customer base. They were experiencing frequent downtime, slow page loads, and losing sales due to cart abandonment. Manual inventory management was consuming 20+ hours per week, and they had no real-time visibility into sales performance.</p>
+            </div>
+            <div class="modal-section">
+                <h3 class="modal-section-title">Solution Delivered</h3>
+                <p>I built a modern, scalable e-commerce platform with microservices architecture that could handle 10x their current traffic. Implemented real-time inventory management, automated order processing, and a comprehensive analytics dashboard. The platform features secure payment processing with multiple gateway integrations, advanced search functionality, and personalized product recommendations.</p>
+            </div>
+            <div class="modal-section">
+                <h3 class="modal-section-title">Results & Impact</h3>
+                <ul class="modal-results">
+                    <li><strong>Revenue Increase:</strong> 45% increase in online sales within 6 months</li>
+                    <li><strong>Performance:</strong> 80% reduction in page load time, resulting in 30% lower bounce rate</li>
+                    <li><strong>Efficiency:</strong> Automated inventory management saved 20 hours/week, reducing operational costs by $15,000/month</li>
+                    <li><strong>Customer Satisfaction:</strong> Improved checkout completion rate from 65% to 89%</li>
+                    <li><strong>Scalability:</strong> Platform now handles 5x more concurrent users without performance issues</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div data-project="2">
+            <h2 class="modal-title">Cloud-Based Project Management</h2>
+            <div class="modal-section">
+                <h3 class="modal-section-title">Client Challenge</h3>
+                <p>The client's team was using multiple disconnected tools (email, spreadsheets, chat apps) to manage projects, leading to miscommunication, missed deadlines, and lack of visibility into project status. They were losing clients due to poor project delivery times and had no way to track team productivity or resource allocation effectively.</p>
+            </div>
+            <div class="modal-section">
+                <h3 class="modal-section-title">Solution Delivered</h3>
+                <p>Developed a comprehensive cloud-based project management SaaS platform with real-time collaboration, automated time tracking, and intelligent resource allocation. The platform includes Gantt charts, Kanban boards, automated reporting, and seamless integrations with popular tools like Slack, Google Drive, and Jira.</p>
+            </div>
+            <div class="modal-section">
+                <h3 class="modal-section-title">Results & Impact</h3>
+                <ul class="modal-results">
+                    <li><strong>Productivity:</strong> 50% reduction in project delivery time through better resource management</li>
+                    <li><strong>Revenue:</strong> Client was able to take on 40% more projects with the same team size</li>
+                    <li><strong>Client Retention:</strong> Improved on-time delivery rate from 72% to 95%, reducing client churn by 60%</li>
+                    <li><strong>Cost Savings:</strong> Eliminated need for 3 separate software subscriptions, saving $8,000/year</li>
+                    <li><strong>Team Efficiency:</strong> Automated reporting saved 15 hours/week of administrative work</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div data-project="3">
+            <h2 class="modal-title">Cross-Platform Mobile Application</h2>
+            <div class="modal-section">
+                <h3 class="modal-section-title">Client Challenge</h3>
+                <p>The client needed a mobile app for both iOS and Android but had limited budget for separate native apps. Their web-based solution wasn't providing the mobile experience users expected, resulting in low engagement and high uninstall rates. They also needed offline functionality for users in areas with poor connectivity.</p>
+            </div>
+            <div class="modal-section">
+                <h3 class="modal-section-title">Solution Delivered</h3>
+                <p>Built a feature-rich cross-platform mobile application using React Native that works seamlessly on both iOS and Android. Implemented offline-first architecture with local data synchronization, push notifications, social sharing features, and biometric authentication. The app includes real-time updates, in-app purchases, and comprehensive analytics.</p>
+            </div>
+            <div class="modal-section">
+                <h3 class="modal-section-title">Results & Impact</h3>
+                <ul class="modal-results">
+                    <li><strong>User Engagement:</strong> 3x increase in daily active users within 3 months</li>
+                    <li><strong>Revenue:</strong> In-app purchases generated $120,000 in first quarter post-launch</li>
+                    <li><strong>Cost Efficiency:</strong> Single codebase reduced development and maintenance costs by 60%</li>
+                    <li><strong>User Retention:</strong> Improved retention rate from 35% to 68% through better UX</li>
+                    <li><strong>Market Reach:</strong> Expanded to both iOS and Android markets simultaneously, doubling potential user base</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div data-project="4">
+            <h2 class="modal-title">RESTful API Platform</h2>
+            <div class="modal-section">
+                <h3 class="modal-section-title">Client Challenge</h3>
+                <p>The client's legacy API system was causing frequent downtime, had no rate limiting (leading to abuse), and lacked proper documentation. Their development team was spending 40% of their time debugging API issues instead of building features. Security vulnerabilities were also a major concern.</p>
+            </div>
+            <div class="modal-section">
+                <h3 class="modal-section-title">Solution Delivered</h3>
+                <p>Designed and implemented a scalable RESTful API platform with comprehensive documentation, intelligent rate limiting, JWT-based authentication, and automated testing. Built with Docker for easy deployment and scaling, integrated Swagger for API documentation, and implemented monitoring and logging systems.</p>
+            </div>
+            <div class="modal-section">
+                <h3 class="modal-section-title">Results & Impact</h3>
+                <ul class="modal-results">
+                    <li><strong>Uptime:</strong> Improved API availability from 94% to 99.9%, eliminating revenue loss from downtime</li>
+                    <li><strong>Developer Productivity:</strong> Reduced API-related debugging time by 70%, allowing team to focus on new features</li>
+                    <li><strong>Cost Reduction:</strong> Rate limiting prevented abuse, reducing infrastructure costs by $12,000/month</li>
+                    <li><strong>Security:</strong> Implemented security best practices, preventing potential data breaches worth millions</li>
+                    <li><strong>Integration Speed:</strong> Comprehensive documentation reduced third-party integration time by 50%</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div data-project="5">
+            <h2 class="modal-title">Real-Time Analytics Dashboard</h2>
+            <div class="modal-section">
+                <h3 class="modal-section-title">Client Challenge</h3>
+                <p>The client was making business decisions based on outdated data (24-48 hours old) and had no way to visualize trends or predict future performance. Their existing reporting system required manual data extraction and took days to generate reports. They were missing critical business opportunities due to lack of real-time insights.</p>
+            </div>
+            <div class="modal-section">
+                <h3 class="modal-section-title">Solution Delivered</h3>
+                <p>Created an interactive real-time analytics dashboard that processes millions of data points with sub-second response times. Implemented predictive analytics using machine learning models, custom report generation, automated alerts for key metrics, and beautiful data visualizations using D3.js. The system integrates with multiple data sources and provides drill-down capabilities.</p>
+            </div>
+            <div class="modal-section">
+                <h3 class="modal-section-title">Results & Impact</h3>
+                <ul class="modal-results">
+                    <li><strong>Decision Making:</strong> Real-time data enabled faster decision-making, capturing opportunities worth $250,000 in first quarter</li>
+                    <li><strong>Revenue Growth:</strong> Predictive analytics helped optimize pricing strategy, increasing revenue by 22%</li>
+                    <li><strong>Time Savings:</strong> Automated reporting eliminated 30 hours/week of manual report generation</li>
+                    <li><strong>Cost Optimization:</strong> Data-driven insights identified cost-saving opportunities worth $80,000/year</li>
+                    <li><strong>Competitive Advantage:</strong> Real-time insights allowed client to respond to market changes 10x faster than competitors</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div data-project="6">
+            <h2 class="modal-title">AI-Powered Content Platform</h2>
+            <div class="modal-section">
+                <h3 class="modal-section-title">Client Challenge</h3>
+                <p>The client's content platform was struggling with low user engagement. Users couldn't find relevant content, leading to high bounce rates. Content creation was time-consuming and expensive, and they had no way to personalize content recommendations. Manual content curation was not scalable.</p>
+            </div>
+            <div class="modal-section">
+                <h3 class="modal-section-title">Solution Delivered</h3>
+                <p>Built an AI-powered content management platform with intelligent content recommendations, automated content generation using GPT models, semantic search capabilities, and personalized user experiences. The platform uses machine learning to understand user preferences and automatically curates and generates relevant content.</p>
+            </div>
+            <div class="modal-section">
+                <h3 class="modal-section-title">Results & Impact</h3>
+                <ul class="modal-results">
+                    <li><strong>User Engagement:</strong> AI recommendations increased average session time by 65% and page views by 80%</li>
+                    <li><strong>Content Production:</strong> Automated content generation reduced content creation costs by 50%</li>
+                    <li><strong>Revenue:</strong> Improved engagement led to 35% increase in ad revenue and subscription conversions</li>
+                    <li><strong>User Satisfaction:</strong> Personalized experience improved user retention by 45%</li>
+                    <li><strong>Scalability:</strong> AI-powered system can handle 10x more content without proportional increase in costs</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
